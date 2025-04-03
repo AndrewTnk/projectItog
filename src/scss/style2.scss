@@ -1,0 +1,80 @@
+@import url(./header.scss);
+@import url(./nav1.scss);
+@import url(./nav2.scss);
+@import url(./nav3.scss);
+@import url(./maincont.scss);
+@import url(./mainbrands.scss);
+@import url(./maintech.scss);
+@import url(./mainprice.scss);
+@import url(./footer.scss);
+
+$bgColor: #f8f8f8;
+
+@font-face {
+  font-family: 'TT Lakes Regular';
+  src: url('../fonts/TTLakes-Regular.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes Medium';
+  src: url('../fonts/TTLakes-Medium.eot');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes Bold';
+  src: url('../fonts/TTLakes-Bold.eot');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  width: 320px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: $bgColor;
+
+  @media (min-width: 768px) and (max-width: 1119px) {
+    margin: 0;
+    width: 768px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: 1120px) and (max-width: 1439px) {
+    margin: 0;
+    width: 1120px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0;
+    width: 1120px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  main {
+    width: 100%;
+    height: auto;
+    background-color: $bgColor;
+  }
+}

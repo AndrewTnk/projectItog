@@ -1,0 +1,195 @@
+.container-aside-bar-call {
+  width: 320px;
+  height: 100%;
+  position: fixed;
+  left: -350px;
+  top: 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+
+  @media (min-width: 768px) and (max-width: 1119px) {
+    width: 513px;
+    height: 100%;
+    z-index: 999;
+    position: fixed;
+    left: 1000px;
+    transition: all 0.3s ease;
+  }
+
+  @media (min-width: 1440px) {
+    width: 513px;
+    height: 100%;
+    z-index: 999;
+    position: fixed;
+    left: 1500px;
+    transition: all 0.3s ease;
+  }
+
+  &.active {
+    left: 0;
+
+    @media (min-width: 768px) and (max-width: 1119px) {
+      left: 250px !important;
+    }
+
+    @media (min-width: 1440px) {
+      left: 950px !important;
+    }
+  }
+
+  .aside-bar-call {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffffff;
+
+    @media (min-width: 768px) and (max-width: 1119px) {
+      width: 440px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: #ffffff;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    @media (min-width: 1440px) {
+      width: 440px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: #ffffff;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    &__header {
+      width: 100%;
+      height: auto;
+
+      &-button {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+
+        button {
+          background-color: #ffffff;
+          border: none;
+          margin-top: 24px;
+          margin-left: 16px;
+          cursor: pointer;
+
+          @media (min-width: 768px) and (max-width: 1119px) {
+            background-color: #ffffff;
+            border: none;
+            margin-top: 24px;
+            margin-left: 16px;
+            cursor: pointer;
+            position: absolute;
+            left: -80px;
+            top: -5px;
+          }
+
+          @media (min-width: 1440px) {
+            background-color: #ffffff;
+            border: none;
+            margin-top: 24px;
+            margin-left: 16px;
+            cursor: pointer;
+            position: absolute;
+            left: -80px;
+            top: -5px;
+          }
+        }
+      }
+
+      &-title {
+        display: flex;
+        justify-content: flex-start;
+
+        h3 {
+          margin-left: 12px;
+          color: #1b1c21;
+          font-family: 'TT Lakes Regular';
+          font-size: 24px;
+          line-height: 32px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    &__inputs {
+      margin-left: 16px;
+
+      .inputs {
+        margin: 0 0 16px 0;
+        width: 288px;
+        height: 48px;
+        border: 1px solid #eaeaea;
+        border-radius: 6px;
+        color: #b5b6bc;
+
+        &::placeholder {
+          position: absolute;
+          left: 16px;
+        }
+      }
+    }
+
+    &__text {
+      margin: 16px;
+      width: 288px;
+
+      @media (min-width: 768px) and (max-width: 1119px) {
+        margin: 16px;
+        width: 376px;
+      }
+
+      @media (min-width: 1440px) {
+        margin: 16px;
+        width: 376px;
+      }
+
+      p {
+        color: #7e7e82;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 500;
+        letter-spacing: 0px;
+
+        span {
+          color: #ff3e79;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__send {
+      position: relative;
+
+      @media (min-width: 1440px) {
+        position: relative;
+        width: 100%;
+        height: 200px;
+      }
+
+      button {
+        position: absolute;
+        right: 18px;
+        background-color: #ffffff;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
