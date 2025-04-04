@@ -12,16 +12,16 @@
     height: 100%;
     z-index: 998;
     transition: all 0.3s ease;
-    left: 900px;
+    left: 5000px;
   }
 
   @media (min-width: 1440px) {
     width: 513px;
-    height: 940px;
+    height: 100%;
     z-index: 998;
     transition: all 0.3s ease;
     position: fixed;
-    left: 1500px;
+    left: 5000px;
   }
 
   &.active {
@@ -31,27 +31,31 @@
       left: 250px;
     }
 
-    @media (min-width: 1440px) {
+    @media (width: 1440px) {
       left: 950px !important;
+    }
+
+    @media (min-width: 1441px) {
+      left: 1420px !important;
     }
   }
 
   .aside-bar {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     transition: all 0.3s ease;
     background-color: #ffffff;
 
     @media (min-width: 768px) and (max-width: 1119px) {
       width: 440px;
-      height: auto;
+      height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       background-color: white;
       box-shadow: -10px 0 4px #454f7e05;
@@ -62,10 +66,10 @@
 
     @media (min-width: 1440px) {
       width: 440px;
-      height: auto;
+      height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       background-color: white;
       box-shadow: -10px 0 4px #454f7e05;
@@ -106,14 +110,13 @@
         }
 
         button {
-          background-color: #ffffff;
+          background-color: transparent;
           border: none;
           margin-top: 24px;
           margin-left: 16px;
           cursor: pointer;
 
           @media (min-width: 768px) and (max-width: 1119px) {
-            color: #ffffff;
             border: none;
             margin-top: 24px;
             margin-left: 16px;
@@ -123,7 +126,6 @@
           }
 
           @media (min-width: 1440px) {
-            color: #ffffff;
             border: none;
             margin-top: 24px;
             margin-left: 16px;

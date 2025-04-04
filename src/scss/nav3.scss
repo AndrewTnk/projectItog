@@ -12,7 +12,7 @@
     height: 100%;
     z-index: 999;
     position: fixed;
-    left: 1000px;
+    left: 5000px;
     transition: all 0.3s ease;
   }
 
@@ -21,7 +21,7 @@
     height: 100%;
     z-index: 999;
     position: fixed;
-    left: 1500px;
+    left: 5000px;
     transition: all 0.3s ease;
   }
 
@@ -32,8 +32,12 @@
       left: 250px !important;
     }
 
-    @media (min-width: 1440px) {
+    @media (width: 1440px) {
       left: 950px !important;
+    }
+
+    @media (min-width: 1441px) {
+      left: 1420px !important;
     }
   }
 
@@ -83,7 +87,7 @@
         justify-content: flex-start;
 
         button {
-          background-color: #ffffff;
+          background-color: transparent;
           border: none;
           margin-top: 24px;
           margin-left: 16px;
